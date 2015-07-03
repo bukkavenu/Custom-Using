@@ -2,9 +2,9 @@ using System;
 
 namespace org.csharp
 {
-    class CustomUsing
+    public class CustomUsing<T> where T:IDisposable
     {
-        Action<IDisposable, Action<IDisposable>> mUsing = (con, acton) =>
+        public static Action<T, Action<T>> mUsing = (con, acton) =>
         {
             try
             {
