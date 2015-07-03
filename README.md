@@ -11,6 +11,7 @@ This class shows a simple way of achieving the functionality analogous to using 
             CustomUsing<SqlConnection>.mUsing(con, i =>
             {
                 i.Open();
+                //other blah-blah code to access db
             });
             
 NOTE:Remember to only use objects inherited from IDisposable
